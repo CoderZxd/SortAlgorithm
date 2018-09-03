@@ -12,5 +12,5 @@
 | 希尔排序 |	O(n<sup>1.5<sub>) | O(n<sup>2<sub>) | O(n) | O(1) | 不稳定 |
 | 快速排序 |	O(N*logN) | O(n<sup>2<sub>) | O(N*logN) | O(N*logN) | 不稳定 |
 | 归并排序 |	O(N*logN) |	O(N*logN) |	O(N*logN) | O(n) | 稳定 |
-| 堆排序	| O(N*logN) | O(N*logN) | O(N*logN) | 不稳定 |
-| 基数排序 |	O(d(n+r)) | | | O(n+r) | 稳定 |
+| 堆排序	| O(N*logN) | O(N*logN) | O(N*logN) | O(1) | 不稳定 |
+| 基数排序 |	O(n*k) | O(n*k) | O(n*k) | O(n+k) | 稳定 |
