@@ -17,6 +17,29 @@ package com.zxd.sort.algorithm.test;
  **/
 public class ShellSort {
     public static void main(String[] args){
-        
+        int[] array = new int[]{3,48,5,15,2,46,17,1,2};
+        int lenth = array.length;
+        int temp = 0;
+        int incre = lenth;
+        while(true){
+            incre = incre/2;
+            for(int k = 0;k<incre;k++){    //根据增量分为若干子序列
+                for(int i=k+incre;i<lenth;i+=incre){
+                    for(int j=i;j>k;j-=incre){
+                        if(array[j]<array[j-incre]){
+                            temp = array[j-incre];
+                            array[j-incre] = array[j];
+                            array[j] = temp;
+                        }else{
+                            break;
+                        }
+                    }
+                }
+            }
+            if(incre == 1){
+                break;
+            }
+        }
+        System.out.println(array);
     }
 }
